@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+  <label>
+    <input #newToDo value="">
+    <button (click)="addToDo(newToDo.value);newToDo.value=''">Add</button>
+  </label>
+  <ul><li *ngFor="let todo of todoList">{{todo}}</li></ul>
+</div>
